@@ -1,0 +1,16 @@
+.input_filter {
+  cursor: pointer;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #e8b7e1;
+  color: #ffffff;
+  transition: all 800ms;
+  font-size: 15px;
+  font-weight: 500;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  max-width: 500px;
+}
