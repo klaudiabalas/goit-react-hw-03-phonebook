@@ -24,7 +24,7 @@ export class App extends React.Component {
       const contact = JSON.parse(jsn);
 
       if (contact) {
-        this.setState(() => ({ contacts: contact }));
+        this.setState(() => ({ contact: contact }));
       }
     } catch (err) {
       console.log(err);
