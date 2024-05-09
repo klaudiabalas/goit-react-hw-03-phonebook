@@ -20,21 +20,21 @@ export class App extends React.Component {
 
   componentDidMount() {
     try {
-      const jsn = localStorage.getItem('contacts');
-      const contact = JSON.parse(jsn);
+      const json = localStorage.getItem('contacts');
+      const contacts = JSON.parse(json);
 
-      if (contact) {
-        this.setState(() => ({ contact: contact }));
+      if (contacts) {
+        this.setState(() => ({ contacts: contacts }));
       }
-    } catch (err) {
-      console.log(err);
+    } catch (error) {
+      console.log(error);
     }
   }
 
   componentDidUpdate(prevState) {
-    if (prevState.contact !== this.state.contact) {
-      const jsn = JSON.stringify(this.state.contact);
-      localStorage.setItem('contacts', jsn);
+    if (prevState.contacts !== this.state.contacts) {
+      const json = JSON.stringify(this.state.contacts);
+      localStorage.setItem('contacts', json);
     }
   }
 
